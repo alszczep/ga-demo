@@ -17,6 +17,7 @@ then
     git branch -m "version/$new_version"
     git push -u origin "version/$new_version"
 
+    echo
     echo "After merging the pull request, run deploy.sh to deploy new version"
 else
     echo "Version has to be set"
