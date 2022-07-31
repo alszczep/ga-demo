@@ -1,0 +1,10 @@
+.layout-bar {
+    display: flex;
+    gap: 10px;
+
+    padding: 10px 30px;
+}
+
+.page-content {
+    padding: 20px;
+}
