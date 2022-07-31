@@ -1,6 +1,6 @@
 {
   "name": "ga-demo",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://alszczep.github.io/ga-demo",
   "private": false,
   "dependencies": {
