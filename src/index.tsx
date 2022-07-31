@@ -5,6 +5,7 @@ import App from './App'
 import ReactGA from "react-ga4";
 
 ReactGA.initialize("G-G9MQK7EMWC")
+ReactGA.send("pageview");
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
