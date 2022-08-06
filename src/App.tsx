@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Layout from "components/Layout"
 import Home from "components/Home"
 import Form1 from "components/Form1"
@@ -7,17 +7,19 @@ import Form2 from "components/Form2"
 import Scroll from "components/Scroll"
 import List from "components/List"
 import ListItem from "components/ListItem"
-import ReactGA from "react-ga4";
+import ReactGA from "react-ga";
 
-ReactGA.initialize("G-G9MQK7EMWC")
-ReactGA.send("pageview");
+ReactGA.initialize("G-G9MQK7EMWC", {
+  debug: true,
+})
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App: FunctionComponent = () => {
   return (
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path="/">
+          <Route path="ga-demo">
             <Route index element={<Home />} />
             <Route path="form1" element={<Form1 />} />
             <Route path="form2" element={<Form2 />} />
@@ -27,6 +29,7 @@ const App: FunctionComponent = () => {
               <Route path=":listItemId" element={<ListItem />} />
             </Route>
           </Route>
+          <Route path="*" element={<Navigate replace to="/ga-demo" />} />
         </Routes>
       </Layout>
     </BrowserRouter>
