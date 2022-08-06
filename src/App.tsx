@@ -9,7 +9,7 @@ import List from "components/List"
 import ListItem from "components/ListItem"
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("G-G9MQK7EMWC", { testMode: true })
+ReactGA.initialize("G-G9MQK7EMWC")
 ReactGA.send("pageview")
 
 const App: FunctionComponent = () => {
