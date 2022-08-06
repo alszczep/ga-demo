@@ -7,12 +7,10 @@ import Form2 from "components/Form2"
 import Scroll from "components/Scroll"
 import List from "components/List"
 import ListItem from "components/ListItem"
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
-ReactGA.initialize("G-G9MQK7EMWC", {
-  debug: true,
-})
-ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.initialize("G-G9MQK7EMWC")
+ReactGA.send("pageview")
 
 const App: FunctionComponent = () => {
   return (
