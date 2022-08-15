@@ -9,24 +9,26 @@ import List from "components/List"
 import ListItem from "components/ListItem"
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("G-G9MQK7EMWC")
+ReactGA.initialize("G-6KSKFLREHX")
 ReactGA.send("pageview")
 
 const App: FunctionComponent = () => {
+  
+
   return (
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path="ga-demo">
-            <Route index element={<Home />} />
-            <Route path="form1" element={<Form1 />} />
-            <Route path="form2" element={<Form2 />} />
-            <Route path="scroll" element={<Scroll />} />
-            <Route path="list">
-              <Route index element={<List />} />
-              <Route path=":listItemId" element={<ListItem />} />
+            <Route path="ga-demo">
+              <Route index element={<Home />} />
+              <Route path="form1" element={<Form1 />} />
+              <Route path="form2" element={<Form2 />} />
+              <Route path="scroll" element={<Scroll />} />
+              <Route path="list">
+                <Route index element={<List />} />
+                <Route path=":listItemId" element={<ListItem />} />
+              </Route>
             </Route>
-          </Route>
           <Route path="*" element={<Navigate replace to="/ga-demo" />} />
         </Routes>
       </Layout>
