@@ -19,7 +19,7 @@ const App: FunctionComponent = () => {
     <BrowserRouter>
       <Layout>
         <Routes>
-            <Route path="ga-demo">
+            <Route path="/">
               <Route index element={<Home />} />
               <Route path="form1" element={<Form1 />} />
               <Route path="form2" element={<Form2 />} />
@@ -29,7 +29,7 @@ const App: FunctionComponent = () => {
                 <Route path=":listItemId" element={<ListItem />} />
               </Route>
             </Route>
-          <Route path="*" element={<Navigate replace to="/ga-demo" />} />
+          <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </Layout>
     </BrowserRouter>
