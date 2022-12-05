@@ -7,13 +7,15 @@ import Form2 from "components/Form2";
 import Scroll from "components/Scroll";
 import List from "components/List";
 import ListItem from "components/ListItem";
-import ReactGA from "react-ga4";
 import Gtm from "components/Gtm";
 import TagManager from "react-gtm-module";
+// import ReactGA from "react-ga4";
 
 TagManager.initialize({
   gtmId: "GTM-5FLXTFV",
-  dataLayer: {},
+  dataLayer: {
+    clickCount: 0,
+  },
 });
 
 // ReactGA.initialize("G-6KSKFLREHX");
