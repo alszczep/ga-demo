@@ -11,6 +11,7 @@ const Gtm: FunctionComponent = () => {
       },
     });
     console.log("Click count set: " + clickCount);
+    console.log((window as any).dataLayer);
   }, [clickCount]);
 
   return (
