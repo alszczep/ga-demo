@@ -12,21 +12,23 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "mixpanel-browser": "2.45.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-ga4": "1.4.1",
+    "react-ga4": "2.1.0",
     "react-gtm-module": "2.0.11",
-    "react-router": "6.3.0",
-    "react-router-dom": "6.3.0",
+    "react-router": "6.9.0",
+    "react-router-dom": "6.9.0",
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "@types/node": "16.11.47",
-    "@types/react": "18.0.15",
-    "@types/react-dom": "18.0.6",
+    "@types/mixpanel-browser": "2.38.1",
+    "@types/node": "18.15.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
     "@types/react-gtm-module": "2.0.1",
-    "typescript": "4.7.4",
-    "vercel": "28.7.2"
+    "typescript": "4.9.5",
+    "vercel": "28.16.15"
   },
   "eslintConfig": {
     "extends": [

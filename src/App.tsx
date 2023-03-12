@@ -8,6 +8,7 @@ import Scroll from "components/Scroll";
 import List from "components/List";
 import ListItem from "components/ListItem";
 import Gtm from "components/Gtm";
+import Mixpanel from "components/Mixpanel";
 import TagManager from "react-gtm-module";
 // import ReactGA from "react-ga4";
 
@@ -36,6 +37,7 @@ const App: FunctionComponent = () => {
               <Route path=":listItemId" element={<ListItem />} />
             </Route>
             <Route path="gtm" element={<Gtm />} />
+            <Route path="mixpanel" element={<Mixpanel />} />
           </Route>
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>

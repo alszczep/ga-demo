@@ -14,6 +14,7 @@ const Layout: FunctionComponent<{ children: ReactNode }> = ({ children }) => {
         <Link to="/scroll">Scroll</Link>
         <Link to="/list">List</Link>
         <Link to="/gtm">GTM</Link>
+        <Link to="/mixpanel">Mixpanel</Link>
       </div>
       <div className="page-content">{children}</div>
     </div>
